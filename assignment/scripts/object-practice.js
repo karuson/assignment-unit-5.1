@@ -35,6 +35,8 @@ console.log(fullName);
   - Console.log your last favorite food 
 */
 
+// Log the favThreeFoods array to check work
+// Log what the correct answer should be then call first & last index
 console.log(me.favThreeFoods);
 console.log(`Our first favorite food should be Steak: ${me.favThreeFoods[0]}`);
 console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[2]}`);
@@ -46,6 +48,10 @@ console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[
   - Console.log your updated shoe count. 
 */
 
+console.log(`The shoe count is: ${me.shoeCount}`);
+me.shoeCount++;
+// Updated shoeCount should be incremented by 1
+console.log(`The updated shoe count is: ${me.shoeCount}`);
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -53,3 +59,7 @@ console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+// Don't judge me 
+me.favoriteColor = 'Champagne Gold';
+console.log(`My favorite color is: ${me.favoriteColor}`);
