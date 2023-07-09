@@ -10,10 +10,11 @@ console.log('***** Object Practice *****')
 */
 
 // assign object to <me>, colons after properties, remember curly braces,  no trailing comma!
-// test boolean property - should be truthy?
+// what happens if hasSiblings is undefined?  Is it truthy?
 const me = { firstName: 'Ben', 
 lastName: 'Lynch',
-hasSiblings: true,
+// <hasSiblings> is not defined if left blank
+hasSiblings: true, 
 shoeCount: 7,
 favThreeFoods: ['Steak', 'Ice Cream', 'Peanut Butter']
   // TODO - add properties here
@@ -42,8 +43,8 @@ console.log(fullName);
   - Console.log your last favorite food 
 */
 
-// Log the favThreeFoods array to check work
-// Log what the correct answer should be then call first & last index
+// log the favThreeFoods array for a reference
+// log what the correct answer should be then call first & last index
 console.log(me.favThreeFoods);
 console.log(`Our first favorite food should be Steak: ${me.favThreeFoods[0]}`);
 console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[2]}`);
@@ -56,10 +57,14 @@ console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[
 */
 
 // practice string concatenation in console logs, check spacings
-console.log(`The shoe count is: ${me.shoeCount}`);
-me.shoeCount++;
-// Updated shoeCount should be incremented by 1
-console.log(`The updated shoe count is: ${me.shoeCount}`);
+console.log(`The current shoe count is: ${me.shoeCount}`);
+
+// This doesn't work..
+// console.log(`The updated shoe count is: ${me.shoeCount++}`);
+
+// But this does..
+console.log(`The updated shoe count (should be 8) is: ${me.shoeCount+=1}`);
+
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -68,6 +73,8 @@ console.log(`The updated shoe count is: ${me.shoeCount}`);
   - Console.log your object
 */
 
-// Don't judge me 🙂
-me.favoriteColor = 'Champagne Gold';
-console.log(`My favorite color is: ${me.favoriteColor}`);
+// Don't judge me, it's different than just gold 🙂
+// me.favoriteColor = 'Champagne Gold';
+
+// why not just put it in the log?
+console.log(`My favorite color is: ${me.favoriteColor = 'Champagne Gold'}`);
