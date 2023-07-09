@@ -9,6 +9,8 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 
+// assign object to <me>, colons after properties, remember curly braces,  no trailing comma!
+// test boolean property - should be truthy?
 const me = { firstName: 'Ben', 
 lastName: 'Lynch',
 hasSiblings: true,
@@ -17,6 +19,7 @@ favThreeFoods: ['Steak', 'Ice Cream', 'Peanut Butter']
   // TODO - add properties here
 }; // end me
 
+// make sure the <me> object looks okay in the console
 console.log('A little about me:', me);
 
 /* 2. Accessing object properties.
@@ -26,7 +29,11 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
+// object properties accessed with <object>.<property>
 const fullName = `${me.firstName} ${me.lastName}`;
+
+// check to make sure <fullName> appears correctly
+// space in between <first> & <last>???
 
 console.log(fullName);
 
@@ -48,6 +55,7 @@ console.log(`Our last favorite food should be Peanut Butter: ${me.favThreeFoods[
   - Console.log your updated shoe count. 
 */
 
+// practice string concatenation in console logs, check spacings
 console.log(`The shoe count is: ${me.shoeCount}`);
 me.shoeCount++;
 // Updated shoeCount should be incremented by 1
@@ -60,6 +68,6 @@ console.log(`The updated shoe count is: ${me.shoeCount}`);
   - Console.log your object
 */
 
-// Don't judge me 
+// Don't judge me 🙂
 me.favoriteColor = 'Champagne Gold';
 console.log(`My favorite color is: ${me.favoriteColor}`);
